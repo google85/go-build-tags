@@ -5,10 +5,13 @@
 ### Usage:
 > Prerequisites:
 ```bash
-
+# run Go in Docker container
+docker run --rm -it -v .:/app --name go-tutorial -w /app  golang:1.24
 ```
 
 > Run:
 ```bash
-go build...
+make run
+# or
+make run-dev
 ```

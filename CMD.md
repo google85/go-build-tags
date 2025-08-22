@@ -12,6 +12,8 @@
     ```bash
         # init module
         go mod init github.com/google85/go-build-tags
+        # mark Git folder as safe
+        git config --global --add safe.directory /app
 
         touch main.go
 
