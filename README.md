@@ -1,5 +1,6 @@
 ## Go build tags
 - following [YouTube](https://www.youtube.com/watch?v=HFIBORHEZsg) tutorial
+- using Makefile [YouTube](https://www.youtube.com/watch?v=XlobWOgcK7Y) tutorial
 
 
 ### Usage:
