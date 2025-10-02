@@ -19,4 +19,10 @@
 
         go run main.go
 
+        # add os env defined vars support
+        mkdir -p config
+        touch config/config.go
+
+
+
     ```
