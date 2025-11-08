@@ -23,6 +23,8 @@
         mkdir -p config
         touch config/config.go
 
+        # add .env support
+        touch .env
 
 
     ```

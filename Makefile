@@ -1,6 +1,14 @@
 build_dir = ./build
 binary_name = main
 
+ifneq (,$(wildcard .env))
+    include .env
+    export $(shell sed 's/=.*//' .env)
+endif
+
+# -include .env
+# export
+
 .PHONY: help
 help:
 	@echo "Usage":
@@ -15,6 +23,9 @@ confirm:
 .PHONY: build
 build:
 	@mkdir -p ${build_dir}
+	set -a
+	source .env
+	set +a
 	GOARCH=amd64 GOOS=linux go build -o ${build_dir}/${binary_name} -tags debug,test main.go
 
 ## clean: Clean-up the build binaries

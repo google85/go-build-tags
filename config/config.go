@@ -5,5 +5,5 @@ import (
 )
 
 func GetGoVersion() (string) {
-	return os.Getenv("GOLANG_VERSION")
+	return os.Getenv("SAMPLE_VAR")
 }
