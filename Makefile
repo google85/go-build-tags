@@ -41,3 +41,7 @@ run:
 .PHONY: run-dev
 run-dev:
 	@go run -tags debug,test main.go
+
+.PHONY: test-run
+test-run:
+	${build_dir}/${binary_name}
